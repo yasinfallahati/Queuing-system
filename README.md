@@ -1,67 +1,51 @@
-<div align="center">
+# Queuing System — سالن زیبایی
 
-<img src="./assets/banner.svg" alt="Queuing System" width="100%" />
+<p align="center"><img src="assets/hero.png" width="100%" alt="Queuing System"></p>
 
-</div>
+<p align="center">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/Tkinter-34D399?style=for-the-badge">
+<img src="https://img.shields.io/badge/Appointments-0F172A?style=for-the-badge">
+</p>
 
-# Queuing System
+Desktop appointment desk for a beauty salon: **customer booking form** + **admin list** with conflict detection — no database server required (in-memory list for the session).
 
-Beauty salon appointment desktop app — customer booking + admin panel (Python + Tkinter).
+## Operator flow
 
----
-
-## English
-
-
-
-### Features
-
-- Customer panel: name, service, date, time
-- Validation and duplicate prevention
-- Admin panel: list and delete appointments
-- Beginner-friendly GUI practice project
-
-### Stack
-
-Python 3 · Tkinter · datetime
-
-### Getting started
-
-```bash
-git clone https://github.com/yasinfallahati/Queuing-system.git
-cd Queuing-system
-python "نوبت دهی .py"
+```
+[Main] → Customer panel → name / service / date / time → validate → append
+       → Admin panel    → listbox refresh · delete selected
 ```
 
----
-
-## فارسی
-
-### سیستم نوبت‌دهی
-
-نوبت‌دهی آرایشگاه — پنل مشتری و مدیریت (پایتون + Tkinter).
-
-
-
-### امکانات
-
-- پنل مشتری: نام، خدمت، تاریخ، ساعت
-- اعتبارسنجی و جلوگیری از نوبت تکراری
-- پنل مدیریت: مشاهده و حذف نوبت‌ها
-- پروژه آموزشی GUI
-
-### تکنولوژی‌ها
-
-Python 3 · Tkinter · datetime
-
-### شروع کار
+Date format `YYYY-MM-DD`, time `HH:MM`. Duplicate timestamps are rejected.
 
 ```bash
-git clone https://github.com/yasinfallahati/Queuing-system.git
-cd Queuing-system
-python "نوبت دهی .py"
+python3 "نوبت دهی .py"
 ```
+
+### Stack chips
+
+Python · Tkinter · `datetime` parsing · messagebox UX
 
 ---
 
-`#python` `#tkinter` `#queue` `#appointment` `#salon` `#desktop`
+## فارسی — سیستم نوبت‌دهی آرایشگاه
+
+اپلیکیشن دسکتاپ برای ثبت نوبت: مشتری نام، نوع خدمات، تاریخ و ساعت را وارد می‌کند؛ اگر همان تایم قبلاً رزرو شده باشد خطا می‌گیرد. مدیر از پنل جداگانه لیست نوبت‌ها را می‌بیند و می‌تواند حذف کند.
+
+### ارزش برای سالن کوچک
+
+| نیاز | پوشش |
+|------|------|
+| ثبت سریع نوبت | فرم مشتری |
+| جلوگیری از تداخل | مقایسه timestamp |
+| مرور روزانه | Listbox مدیر |
+| بدون سرور | حافظهٔ جلسه جاری |
+
+### اجرا
+
+```bash
+python3 "نوبت دهی .py"
+```
+
+> توجه: داده‌ها در حافظه نگه داشته می‌شوند؛ با بستن برنامه پاک می‌شوند. برای ماندگاری می‌توان لایهٔ SQLite اضافه کرد.
