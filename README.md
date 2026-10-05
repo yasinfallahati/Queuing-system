@@ -1,154 +1,67 @@
-# 💇‍♀️ Beauty Salon Appointment System
+<div align="center">
 
-A simple **Salon Appointment Management System** built with Python 🐍 and Tkinter.
+<img src="./assets/banner.svg" alt="Queuing System" width="100%" />
 
-This desktop application allows customers to book appointments and provides an admin panel to manage and delete reservations.
+</div>
 
-The project is designed as a beginner-friendly GUI application to practice Python, Tkinter, and basic data management.
+# Queuing System
 
----
-
-## ✨ Features
-
-### 👤 Customer Panel
-
-✅ Enter customer name
-✅ Select service type
-✅ Choose appointment date
-✅ Choose appointment time
-✅ Validate date and time format
-✅ Prevent duplicate reservations
-✅ Receive booking confirmation
+Beauty salon appointment desktop app — customer booking + admin panel (Python + Tkinter).
 
 ---
 
-### 🛠️ Admin Panel
+## English
 
-✅ View all appointments
-✅ Display customer information
-✅ Display service details
-✅ Display reservation date and time
-✅ Delete selected appointments
 
----
 
-## 🖥️ Application Preview
+### Features
 
-```
-================================
-       سیستم نوبت‌دهی آرایشگاه
-================================
+- Customer panel: name, service, date, time
+- Validation and duplicate prevention
+- Admin panel: list and delete appointments
+- Beginner-friendly GUI practice project
 
-          ورود به سیستم
+### Stack
 
-     [ پنل مشتری ]
+Python 3 · Tkinter · datetime
 
-     [ پنل مدیریت ]
-
-================================
-```
-
----
-
-## 🛠️ Technologies Used
-
-* 🐍 Python 3
-* 🖼️ Tkinter (GUI Framework)
-* 📅 Datetime Module
-* ⚠️ MessageBox Handling
-
----
-
-## 🚀 How To Run
-
-### 1. Clone the repository
+### Getting started
 
 ```bash
-git clone https://github.com/your-username/beauty-salon-system.git
+git clone https://github.com/yasinfallahati/Queuing-system.git
+cd Queuing-system
+python "نوبت دهی .py"
 ```
 
-### 2. Enter project folder
+---
+
+## فارسی
+
+### سیستم نوبت‌دهی
+
+نوبت‌دهی آرایشگاه — پنل مشتری و مدیریت (پایتون + Tkinter).
+
+
+
+### امکانات
+
+- پنل مشتری: نام، خدمت، تاریخ، ساعت
+- اعتبارسنجی و جلوگیری از نوبت تکراری
+- پنل مدیریت: مشاهده و حذف نوبت‌ها
+- پروژه آموزشی GUI
+
+### تکنولوژی‌ها
+
+Python 3 · Tkinter · datetime
+
+### شروع کار
 
 ```bash
-cd beauty-salon-system
-```
-
-### 3. Run the application
-
-```bash
-python main.py
+git clone https://github.com/yasinfallahati/Queuing-system.git
+cd Queuing-system
+python "نوبت دهی .py"
 ```
 
 ---
 
-## 📂 Project Structure
-
-```
-Beauty-Salon-System/
-│
-├── main.py
-└── README.md
-```
-
----
-
-## 🎮 How It Works
-
-### Customer Workflow:
-
-1. Open customer panel
-2. Enter personal information
-3. Select service
-4. Enter appointment date and time
-5. Confirm reservation
-
----
-
-### Admin Workflow:
-
-1. Open management panel
-2. View all reservations
-3. Select an appointment
-4. Delete unwanted reservations
-
----
-
-## 🧠 Concepts Practiced
-
-This project demonstrates:
-
-* Functions in Python
-* GUI development with Tkinter
-* Event-driven programming
-* Working with lists and dictionaries
-* Date and time validation
-* Error handling
-* Basic CRUD operations
-
----
-
-## 🔮 Future Improvements
-
-Possible upgrades:
-
-* 💾 Save appointments permanently using SQLite
-* 🔐 Add admin login system
-* 📱 Send SMS appointment reminders
-* 📊 Add dashboard and statistics
-* 🖼️ Improve UI design
-* 👥 Add customer history
-* ☁️ Connect to a database server
-
----
-
-## 👨‍💻 Developer
-
-Created with ❤️ by **Yasin Fallahati**
-
-🐍 Python Developer
-💻 Software Development Enthusiast
-🚀 Building real-world projects
-
----
-
-⭐ If you find this project useful, don't forget to give it a star!
+`#python` `#tkinter` `#queue` `#appointment` `#salon` `#desktop`
